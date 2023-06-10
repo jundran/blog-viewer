@@ -22,7 +22,7 @@ function BlogSummary (blog) {
 	const options = { month: 'long', day: 'numeric', year: 'numeric' }
 	const date = new Date(blog.createdAt).toLocaleDateString(undefined, options)
 	bs.innerHTML = /*html*/`
-		<a class='title' href=${`/blog.html?id=${blog._id}`}>${blog.title}</a>
+		<a class='title' href=${`blog.html?id=${blog._id}`}>${blog.title}</a>
 		<p class='author'>by ${blog.user.fullname}</p>
 		<p class='text'>${blog.summary}</p>
 		<p class='date'>${date}</p>
