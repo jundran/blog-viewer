@@ -1,0 +1,113 @@
+body {
+	background: #eee;
+	margin: 0;
+	font-family: sans-serif;
+	padding-bottom: 64px;
+}
+
+main {
+	max-width: 800px;
+	margin: auto;
+}
+
+header {
+	padding: 20px;
+	background: navy;
+}
+header nav {
+	max-width: 800px;
+	margin: auto;
+}
+header a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.4rem;
+}
+header a:hover {
+	text-decoration: underline;
+}
+header a + a {
+	margin-left: 40px;
+}
+
+hr {
+	margin: 20px 0;
+}
+
+form ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+label {
+	font-weight: 600;
+}
+li {
+	display: grid;
+	grid-template-columns: 130px 1fr;
+	margin-bottom: 20px;
+}
+textarea, input {
+	font-family: inherit;
+	font-size: .95rem;
+}
+textarea {
+	height: 60px
+}
+
+
+.blog-summary a {
+	text-decoration: none;
+	padding-bottom: 2px;
+	font-size: 1.2rem;
+	color: navy;
+	font-weight: 600;
+}
+.blog-summary a:hover {
+	border-bottom: 1px solid;
+}
+.blog-summary p {
+	margin: 4px 0;
+}
+.blog-summary .author {
+	font-weight: 600;
+}
+.blog-summary .text {
+	color: #444;
+}
+.blog-summary .date {
+	font-size: .85rem;
+}
+
+.blog .author {
+	font-weight: 600;
+	color: navy;
+}
+.blog .date {
+	font-weight: 600;
+	font-size: .85rem;
+	color: #444;
+}
+.blog .text {
+	line-height: 1.5;
+}
+
+.comment{
+	padding: 20px 0;
+}
+.comment:not(:last-of-type) {
+	border-bottom: 1px solid #444;
+}
+.comment p {
+	margin: 8px 0;
+}
+.comment .text {
+	font-size: .95rem;
+	color: #222;
+}
+.comment .footer {
+	font-size: .75rem;
+}
+.comment .footer span {
+	font-weight: 600;
+}
